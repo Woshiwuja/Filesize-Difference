@@ -5,7 +5,6 @@ def getSize(fileobject):
     size = os.fstat(fileobject.fileno()).st_size
     return size
 
-
 with open(sys.argv[1], 'r') as a, open(sys.argv[2], 'r') as b:
     a_size = getSize(a)
     b_size = getSize(b)
