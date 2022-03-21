@@ -1,6 +1,6 @@
-# installing
+# Installing
 
-git clone https://github.com/Woshiwuja/Filesize-Difference.git 
+git clone https://github.com/Woshiwuja/Filesize-Difference.git
 
 cd Filesize_Difference
 
