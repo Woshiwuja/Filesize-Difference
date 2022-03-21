@@ -12,13 +12,13 @@ with open(sys.argv[1], 'r') as a, open(sys.argv[2], 'r') as b:
         diff_size = a_size - b_size
         a_file_name = os.path.basename(a.name)
         b_file_name = os.path.basename(b.name)
-        print(a_file_name,"size:", a_size)
-        print(b_file_name,"size:", b_size)
+        print(a_file_name,"size:",a_size)
+        print(b_file_name,"size:",b_size)
         print("size difference:",diff_size)
     else:
         diff_size = b_size - a_size
         a_file_name = os.path.basename(a.name)
         b_file_name = os.path.basename(b.name)
-        print(a_file_name,"size:", a_size)
-        print(b_file_name,"size:", b_size)
+        print(a_file_name,"size:",a_size)
+        print(b_file_name,"size:",b_size)
         print("size difference:",diff_size)
