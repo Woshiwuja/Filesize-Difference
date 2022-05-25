@@ -1,0 +1,57 @@
+card defining
+
+name
+card_type:  array[0-5]
+            troop
+            vehicle
+            weapon
+            equipment
+            skill
+
+card_effect: string
+card_tag: string
+card_cost: int
+card_attack: int
+card_defense: int
+card_image: string
+
+
+card tags
+
+stealth -> cant be targeted, attacking makes it lose stealth
+flying -> cant be blocked
+sniper -> can select the target of the attack
+dog_tag -> if it dies do something
+infiltrator -> can be played on enemy board has different effects
+anti-flying -> deals double damage to flying, can block flying
+anti-vehicle -> deals double damage to vehicles, can block vehicles
+kevlar -> make the first damage taken = 0, lose kevlar
+heavy -> cant attack the first turn summoned
+
+
+example json of card: 
+
+{
+    "name": "Thor's hammer",
+    "description": "Mjölnir, the legendary hammer of the Norse god of thunder.",
+    "effect":"Can only equip to Thor. Increase Thor attack by 3",
+    "image": "https://game.example/item-id-8u5h2m.png",
+    "card_type":"equipment",
+    "card_cost":"3",
+    "tags":"dog_tag",
+    "tag_effect":"when sent to graveyard add it to your hand next turn"
+}
+
+
+a more tradition card would be like
+
+{
+  "card_name":"Noob Soldier"
+  "card_type":"0",
+  "card_cost":"2",
+  "card_attack":"2",
+  "card_defense":"2",
+  "card_tags": null,
+  "card_effect": null,
+  "card_image" : "https://images.unsplash.com/photo-1579912437766-7896df6d3cd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29sZGllcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+}
