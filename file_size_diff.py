@@ -47,20 +47,7 @@ with open(sys.argv[1], 'r') as a, open(sys.argv[2], 'r') as b:
     b_converted = bytesize_diff(a_size,b_size)[3]
     diff_size = bytesize_diff(a_size,b_size)[0]
     a_file_name = os.path.basename(a.name)
-    b_file_name = os.path.basename(b.name)
-    if (unit == 'B'):
-        print(a_file_name,"size:",a_converted,unit)
-        print(b_file_name,"size:",b_converted,unit)
-        print("size difference:",diff_size,unit)
-    elif (unit == 'kB'):
-        print(a_file_name,"size:",a_converted,unit)
-        print(b_file_name,"size:",b_converted,unit)
-        print("size difference:",diff_size,unit)
-    elif (unit == 'MB'):
-        print(a_file_name,"size:",a_converted,unit)
-        print(b_file_name,"size:",b_converted,unit)
-        print("size difference:",diff_size,unit)
-    elif (unit == 'GB'):
-        print(a_file_name,"size:",a_converted,unit)
-        print(b_file_name,"size:",b_converted,unit)
-        print("size difference:",diff_size,unit)
+    b_file_name = os.path.basename(b.name) 
+    print(a_file_name,"size:",a_converted,unit)
+    print(b_file_name,"size:",b_converted,unit)
+    print("size difference:",diff_size,unit)
