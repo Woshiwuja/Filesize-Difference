@@ -1,6 +1,6 @@
 import sys
 import os
-
+#ciao al corso
 def get_size(fileobject):
     size = os.fstat(fileobject.fileno()).st_size
     return size
